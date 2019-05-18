@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "cors-it-is",
+  "scope": "shaun",
+  "builds": [{ "src": "src/*.js", "use": "@now/node" }],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/cors.js"
+    }
+  ],
+  "alias": ["cors-it-is.now.sh", "cors-it-is.shaun.church"]
+}
